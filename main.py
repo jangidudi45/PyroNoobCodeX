@@ -36,7 +36,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hello im txt file downloader\nPress /pyro to download links listed in a txt file in the format **Name:link**\n\nBot made by BATMAN")
+    editable = await m.reply_text("Hello I am Txt file downloader\nI Can Download links listed in a txt file in the format **Name:link**\n\nBot Made by ADITYA⚡")
 
 @bot.on_message(filters.command(["cancel"]))
 async def cancel(_, m):
@@ -50,7 +50,7 @@ async def restart_handler(_, m):
     await m.reply_text("Restarted!", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
-@bot.on_message(filters.command(["pyro"]))
+@bot.on_message(filters.command(["Adii"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text("Send txt file**")
     input: Message = await bot.listen(editable.chat.id)
